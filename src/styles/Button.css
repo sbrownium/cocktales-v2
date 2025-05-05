@@ -1,0 +1,10 @@
+.icon {
+    border: none;
+    background: none; 
+}
+button.icon {
+    padding: .5em 1em .5em 0;
+}
+button {
+    cursor: pointer;
+}
