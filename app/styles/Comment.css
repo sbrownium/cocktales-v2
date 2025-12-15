@@ -1,0 +1,29 @@
+/* Layout */
+.commentContainer,
+.textContainer,
+.timeContainer {
+    display: flex;
+}
+.commentContainer {
+    flex-direction: column;
+    position: relative;
+}
+.textContainer,
+.timeContainer {
+    flex-direction: row;
+}
+.timeContainer {
+    justify-content: flex-end;
+    align-items: baseline;
+    margin: 0 1.5em 0 0;
+}
+.commentContainer {
+    padding: 1em .75em .5em .75em;
+    border-radius: 12px;
+    margin: 1em 0;
+}
+/* Color */
+
+.commentContainer {
+    background: #121212;
+}

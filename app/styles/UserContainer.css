@@ -1,0 +1,12 @@
+/* Layout */
+.userContainer,
+.feedbackContainer {
+    display: flex;
+}
+.userContainer {
+    flex-direction: column;
+    margin: 1em 0;
+}
+.feedbackContainer {
+    flex-direction: row;
+}

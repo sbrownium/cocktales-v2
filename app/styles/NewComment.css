@@ -1,0 +1,23 @@
+.commentAlert {
+    border: 1px solid black;
+}
+.commentForm {
+    display: flex;
+    flex-direction: row;
+    padding: .5em 0 0 2.5em;
+}
+.commentForm input[type=text] {
+    font-size: 1em;
+    padding: .125em .25em;
+}
+.commentForm button,
+.commentForm input[type=submit] {
+    font-size: .9em;
+    padding: .25em .45em;
+}
+.commentForm input[type=submit] {
+    margin: 0 .25em 0 .5em;
+}
+.commentForm button {
+    margin: 0 .5em 0 .25em;
+}

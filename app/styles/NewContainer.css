@@ -1,0 +1,4 @@
+.overlay form input.positive,
+.overlay form button.negative {
+    font-size: 1.15em;
+}

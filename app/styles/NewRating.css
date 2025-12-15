@@ -1,0 +1,26 @@
+/* Layout */
+.userRatingContainer,
+form.ratings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+select[name="ratingSelect"] { 
+    padding: .125em 0 .125em .125em;
+}
+select[name="ratingSelect"].rated {
+    font-size: 1.5em;
+    border-radius: 7px;
+}
+select[name="ratingSelect"].unrated {
+    font-size: .9em;
+    border-radius: 4px;
+}
+.ratings input[type='submit'],
+button.nmind {
+    font-size: .9em;
+    border-radius: 4px;
+    padding: .25em .5em;
+    margin: 0 .25em;
+} 

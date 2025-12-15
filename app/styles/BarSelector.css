@@ -1,0 +1,5 @@
+.missing {
+    outline: auto;
+    outline-color: red;
+    color: red;
+}

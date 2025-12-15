@@ -1,12 +1,12 @@
 import React, {useState, useMemo, useContext} from "react";
 import DrinkList from './DrinkList.js'
-import ChangeBar from './ChangeBar.js';
-import Button from "./Button.js";
+import ChangeBar from './ui/ChangeBar.js';
+import Button from "./ui/Button.js";
 import { UserContext } from "./app/UserContext.js";
 import { BarContext } from "./app/BarContext.js";
-import './Bar.css';
+import '../../styles/Bar.css';
 import TimeOfDay from "./TimeOfDay.js";
-import XIcon from "./XIcon";
+import XIcon from "./XIcon.js";
 
 
 

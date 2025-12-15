@@ -1,0 +1,94 @@
+.moreOptionsMenuContainer {
+    margin: 0 0 0 1.5em;
+}
+.moreSelectionsContainer.ratings {
+    align-items: flex-end;
+    /* position: absolute; */
+    right: 1em;
+}
+.moreSelectionsContainer.comments {
+    align-items: flex-end;
+    position: absolute;
+    right: -1em;
+    bottom: .45em;
+}
+.moreSelectionsContainer.bars,
+.moreSelectionsContainer.drinks {
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+}
+.moreSelectionsContainer.ratings {
+    align-items: flex-end;
+}
+
+.disabled {
+    color: rgba(255, 255, 255, 0.38);
+    cursor: default;
+    border: none;
+    background: none;
+}
+.textButton {
+    border: none;
+    background: none;
+    text-transform: capitalize;
+}
+.disabled .dot {
+    background: rgba(255, 255, 255, 0.38);
+}
+.moreOptionsButtonHolder.expanded {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    bottom: 2.1em;
+    padding: .5em .5em .5em 0;
+    border-top: 1px solid #80808029;
+    /* border-bottom: none; */
+    border-left: 1px solid #80808029;
+    border-right: 1px solid #80808029;
+    background: #1D1D1E;
+    border-radius: 8px 8px 0 0;
+}
+.ratings .moreOptionsButtonHolder.expanded {
+    position: inherit;
+}  
+.moreOptionsButtonHolder.expanded button {
+    padding: .5em 0 .5em 1em;
+}
+.comments .expanded,
+.menuButtonContainer.bars.expanded,
+.menuButtonContainer.comments.expanded,
+.menuButtonContainer.drinks.expanded,
+.menuButtonContainer.ratings.expanded {
+    background: #1D1D1E;
+}
+.menuButtonContainer.comments.expanded,
+.menuButtonContainer.bars.expanded,
+.menuButtonContainer.drinks.expanded,
+.menuButtonContainer.ratings.expanded {
+    border-bottom: 1px solid #80808029;
+    border-left: 1px solid #80808029;
+    border-right: 1px solid #80808029;
+    border-radius: 0 0 8px 8px;
+} 
+.menuButtonContainer.bars,
+.menuButtonContainer.comments,
+.menuButtonContainer.drinks,
+.menuButtonContainer.ratings {
+    background: none;
+    border: none;
+    margin: 0;
+}
+.menuButtonContainer.bars,
+.menuButtonContainer.drinks {
+    padding: .25em .5em .25em 3.05em;
+}
+.menuButtonContainer.unarchived 
+{
+    padding: .25em .5em .25em 4.23em;
+}
+.menuButtonContainer.comments,
+.menuButtonContainer.ratings {
+    padding: .25em .5em .25em 2.59em;
+}

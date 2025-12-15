@@ -1,0 +1,8 @@
+.actionBtnHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.moreOptionsButtonHolder.expanded .actionBtnHolder button {
+    padding: .5em 1em;
+}

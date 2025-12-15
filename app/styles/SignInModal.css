@@ -1,0 +1,9 @@
+.messageHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5em 1em 1em 1em;
+}
+.messageHolder p {
+    font-size: 1.1em;
+}

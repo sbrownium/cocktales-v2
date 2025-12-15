@@ -1,0 +1,444 @@
+/* Layout */
+#root,
+body,
+main, 
+footer,
+footer nav {
+  display: flex;
+}
+#root,
+body,
+main {
+  flex-direction: column;
+}
+body,
+dialog {
+  background: #121212;
+}
+main {
+  margin:0 0 80px 0;
+  padding: 0 1em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 1em 0 0;
+  width: 100%;
+  /* background: #1D1D1E; */
+  /* flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em; 
+  width: 100vw;
+  max-width: 500px; */
+}
+.background {
+  background: #1D1D1E;
+  border-top: 1px solid #80808029;
+  width: 100vw;
+  position: absolute;
+  width: 100vw;
+  max-height: 4.75em;
+  height: 4.75em;
+  z-index: -1;
+}
+.footContainer {
+  position: relative;
+  display: grid;
+  align-items: end
+}
+footer nav {
+  position: absolute;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em; 
+  width: 100vw;
+  max-width: 500px; 
+  /* background: #1D1D1E; */
+}
+header svg {
+  margin: 1em;
+}
+.initialSelect {
+  /* font-size: 8em; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.initialSelect button {
+  background: none;
+  border: none;
+}
+.selectionContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.selectionContainer button.barButton,
+.selectionContainer button.drinkButton {
+  margin: 3em 4em;
+}
+.bottomSheet {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 0 -1em 0;
+}
+.bottomSheet .modalBtn {
+  padding: 0;
+}
+.tabTopContainer {
+  display: flex;
+  justify-content: center;
+}
+.bottomSheet .buttonHolder,
+.bottomSheet button {
+  width: 100%;
+}
+.tabTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+  width: 160px;
+  border-radius: 5px 5px 0 0;
+}
+.bar {
+  height: 3px;
+  width: 100px;
+  background: black;
+  border-radius: 2px;
+}
+.tabBottom {
+  height: 16px;
+}
+/* dialog.selectionOverlay[open] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform: translateY(100%);
+  position: fixed;
+  top: auto;
+  animation-name: sliding-vertically;
+  animation-duration: 2s;
+} */
+
+form select,
+form input {
+  color: black;
+}
+
+/* Applying the reverse animation to the dialog */
+dialog.selectionOverlay {
+  animation: slideDown .25s ease-in forwards; /* Apply the reverse animation */
+}
+
+/* Applying the animation to the dialog */
+dialog.selectionOverlay[open] {
+  position: fixed;
+  top: calc(100% - 280px);
+  animation: slideUp 0.25s ease-out forwards;
+}
+.emoji.footerEmoji {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+.selectionBtn .emoji {
+  margin: 0;
+}
+.selectionBtn {
+  display: inline-flex;
+  align-items: center;
+}
+textarea {
+  width: 90%;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+  /* resize: none; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* overflow: hidden; */
+}
+
+
+/* .drinkButton {
+  letter-spacing: -.25em;
+  padding: 0 .25em 0 0;
+} */
+/* .barButton {
+  background: #78D1D2; 
+} */
+/* .drinkButton.initialSelect {
+  letter-spacing: -1em;
+  padding: 0 1em 0 0;
+} */
+
+.backgroundOverlay {
+  background: #ccc;
+}
+.positive {
+  /* background: #97DBAE; */
+  background: #78D1D2;
+  /* background:#75BDE0 */
+}
+.negative {
+  background: #CDE4AD;
+}
+button,
+input[type=submit] {
+  font-size: 1.1em;
+  border: none;
+  padding: .5em 1em;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.formButtons button,
+.formButtons input[type=submit] {
+  margin: .75em 1em .5em;
+}
+
+/* Typography */
+.initialSelect button p {
+  margin: 0;
+  font-size: 4em;
+  line-height: 1.1em;
+}
+.initialSelect button p.startEmoji {
+  font-size: 7em;
+}
+
+/* Fonts */
+p,
+li,
+.proza-libre-regular {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+label, 
+.proza-libre-medium {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+h1,
+h2,
+.proza-libre-semibold {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.proza-libre-bold {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.proza-libre-extrabold {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.proza-libre-regular-italic {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.proza-libre-medium-italic {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.proza-libre-semibold-italic {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.proza-libre-bold-italic {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.proza-libre-extrabold-italic {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+p,
+li,
+a,
+button,
+label, 
+h1,
+h2,
+.proza-libre * {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.initialSelect p{
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "YOPQ" 300;
+}
+
+/* Colors */
+p.color-1 {
+  color: #2E9592;
+  background: none;
+}
+button.color-1,
+button.color-2,
+button.color-3,
+button.color-4,
+input[type=submit].color-4 {
+  color: black;
+}
+.color-1 {
+  /* background: #dca4df; 
+  background: #e86588; */
+  background: #2E9592;
+}
+.color-2 {
+  /* background: #a7226f; */
+  /* background: #f76868 */
+  background: #bc3c86;
+}
+.color-3 {
+  background: #f46c3f;
+}
+.color-4 {
+  background: #f7dc68;
+}
+.color-5 {
+  background: #2d6677;
+}
+.color-6 {
+  background: #003e56;
+}
+.color-4,
+.color-5,
+.color-6 {
+  color: white;
+}
+.border-1 {
+   border: 1px solid #2E9592;
+}
+.outline-1 {
+  outline: 3px solid #2E9592;
+}
+.border-2 {
+  border: 1px solid #c3ecf3;
+  background: #c3ecf320;
+}
+.border-3 {
+  border: 1px solid #7bc9d4;
+  background: #7bc9d420;
+}
+.border-4 {
+  border: 1px solid #f7dc68;
+}
+.border-5 {
+  border: 1px solid #ccc;
+}
+.border-6 {
+  border: 1px solid #003e56;
+  background: #003e5620;
+}
+
+dialog.overlay {
+  border: 1px solid #8080802b;
+  border-radius: 10px;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.changeBars .formContainer {
+  margin: 0 0 1em;
+}
+.buttonHolder {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.selectionContainer .buttonHolder button {
+  margin: 0;
+}
+.modalBtn {
+  border: none;
+  background: none;
+}
+
+.overlay form {
+  display: flex;
+  flex-direction: column;
+  margin: .5em 2em;
+  width: 350px;
+  max-width: 100vw;
+}
+.overlay form select,
+.overlay form input {
+  font-size: 1.1em;
+}
+.overlay.changeBars form select {
+  font-size: 1.25em;
+  padding: .5em;
+  border-radius: 5px;
+}
+.overlay form label {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 1.25em;
+  line-height: 1.55em;
+  margin: .25em 0;
+}
+.overlay form label:last-of-type {
+  margin: .25em 0 .75em;
+}
+.overlay form fieldset.formButtons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: none;
+}
+
+dialog.overlay::backdrop {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(3px);
+}
+button.emoji {
+  padding: 0;
+  margin: 0;
+}
+.archived {
+  color: #808080;
+}

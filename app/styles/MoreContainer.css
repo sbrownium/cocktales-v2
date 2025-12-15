@@ -1,0 +1,67 @@
+.menuButtonContainer {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background: none;
+}
+.dot {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    margin: 7px 0;
+    background: rgba(255, 255, 255, 0.6);
+}
+.dot:first-of-type {
+    margin: 0 0 7px 0; 
+}
+.dot:last-of-type {
+    margin: 7px 0 0 0; 
+}
+.dotHolder {
+    padding: 0 9px;
+}
+.menuButtonContainer svg {
+    padding: 2px 0;
+}
+.moreSelectionsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em 0 0;
+ }
+ .moreButtonsHolder {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5em;
+    border-radius: 8px 8px 0 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: #1D1D1E;
+    transition: all .35s ease-in-out;
+ }
+ .moreButtonsHolder.expanded {
+    transform: translateY(-12.08em);
+    border-top: 1px solid #80808029;
+    border-left: 1px solid #80808029;
+    border-bottom: 1px solid #1D1D1E;
+    border-right: 1px solid #80808029;
+ }
+ button.menuButton {
+    padding: 0;
+ }      
+ .moreSelectionsContainer a {
+    padding: 1em;
+    position: relative;
+ }
+ .moreButtonsHolder a {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.25s, display 0.25s;
+    transition-behavior: allow-discrete; 
+ }
+ .moreButtonsHolder.expanded a {
+    display: flex;
+    opacity: 1; 
+ }
