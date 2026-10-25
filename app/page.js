@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useEffect, useRef, useContext } from 'react';
 import { ref, onValue } from "firebase/database";
 import { db } from "./ui/firebase.js";
