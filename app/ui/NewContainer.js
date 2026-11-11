@@ -1,17 +1,17 @@
-import React, { useContext, useState, useEffect, useRef } from 'react';
-import { UserContext } from './app/UserContext.js';
-import { BarContext } from './app/BarContext.js';
-import { ref, child, push, update } from "firebase/database";
-import { db } from "./firebase.js";
-import BarSelector from './BarSelector.js';
-import NewBar from './NewBar.js';
-import NewDrink from './NewDrink.js';
-import Submit from './Submit.js';
-import Button from './Button.js';
-import SignIn from './SignIn.js';
-import './../styles/NewContainer';
-import XIcon from './XIcon.js';
-import SignInModal from './SignInModal.js';
+import React, { useContext, useState, useEffect } from 'react';
+import { UserContext } from '../context/UserContext';
+import { BarContext } from '../context/BarContext';
+// import { ref, child, push, update } from 'firebase/database';
+// import { db } from '../firebase';
+import BarSelector from './BarSelector';
+import NewBar from './NewBar';
+import NewDrink from './NewDrink';
+import Submit from './Submit';
+import Button from './Button';
+import SignIn from './SignIn';
+import '../styles/NewContainer.css';
+import XIcon from './XIcon';
+
 
 
 export default function NewContainer ({

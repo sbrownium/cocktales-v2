@@ -1,8 +1,8 @@
 import React, {useContext} from "react";
-import Comment from "./Comment";
-import UserRating from "./UserRating";
-import { UserContext } from "./app/UserContext";
-import "./../styles/UserContainer";
+import Comment from "/Comment";
+import UserRating from "/UserRating";
+import { UserContext } from "/app/UserContext";
+import "/styles/UserContainer";
 
 export default function UserContainer ({
     archived,

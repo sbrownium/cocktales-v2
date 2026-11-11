@@ -1,13 +1,13 @@
 import React, {useContext, useState, useMemo, useRef, useEffect} from 'react';
-import { UserContext } from './app/UserContext.js';
-import { BarContext } from './app/BarContext.js';
-import { ref, update } from "firebase/database";
-import { db } from "./ui/firebase.js";
-import Button from './Button.js';
-import Drink from './Drink.js';
-import MoreOptionsMenu from './ui/MoreOptionsMenu.js';
-import EditBox from './ui/EditBox.js';
-import '../../styles/DrinkList.css';
+import { UserContext } from '../context/UserContext';
+import { BarContext } from '../context/BarContext';
+// import { ref, update } from 'firebase/database';
+// import { db } from '../firebase';
+import Button from './Button';
+import Drink from './Drink';
+import MoreOptionsMenu from './MoreOptionsMenu';
+import EditBox from './EditBox';
+import '../styles/DrinkList.css';
 
 export default function DrinkList({
     addedBy,

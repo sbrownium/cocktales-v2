@@ -1,12 +1,11 @@
 import React, {useState, useContext, useRef, useEffect} from 'react';
-import { ref, update } from "firebase/database";
-import { db } from "./firebase.js";
+// import { ref, update } from 'firebase/database';
+// import { db } from '../firebase';
 import EditBox from './EditBox';
-import MoreEditButton from './MoreEditButton.js';
 import Time from './Time.js';
 import Button from './Button.js';
-import { UserContext } from './app/UserContext.js';
-import '../styles/Comment';
+import { UserContext } from '../context/UserContext';
+import '../styles/Comment.css';
 import MoreOptionsMenu from './MoreOptionsMenu.js';
 
 export default function Comment ({

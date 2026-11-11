@@ -1,19 +1,19 @@
 'use client'
 
 import React, { useState, useEffect, useRef, useContext } from 'react';
-import { ref, onValue } from "firebase/database";
-import { db } from "./ui/firebase.js";
-import { UserContext } from "./app/UserContext.js";
-import { BarContext } from './app/BarContext.js';
-import SignIn from './SignIn.js';
-import Bar from './ui/Bar.js';
-import '../../styles/App.css';
-import EmojiLogo from './EmojiLogo.js';
-import NewContainer from './NewContainer.js';
-import Button from './ui/Button.js';
-import SelectionContainer from './SelectionContainer.js';
-import MoreContainer from './MoreContainer.js';
-import SignInModal from './SignInModal.js';
+// import { ref, onValue } from 'firebase/database';
+// import { db } from './firebase';
+import { UserContext } from './context/UserContext';
+import { BarContext } from './context/BarContext';
+import SignIn from './ui/SignIn';
+import Bar from './ui/Bar';
+import './styles/App.css';
+import EmojiLogo from './ui/EmojiLogo';
+import NewContainer from './ui/NewContainer';
+import Button from './ui/Button';
+import SelectionContainer from './ui/SelectionContainer';
+import MoreContainer from './ui/MoreContainer';
+import SignInModal from './ui/SignInModal';
 
 export default function Page() {
   const [bars, setBars] = useState(null);

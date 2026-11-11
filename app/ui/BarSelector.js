@@ -1,6 +1,6 @@
 import { useContext} from 'react';
 import { BarContext } from '../context/BarContext';
-import '../styles/BarSelector';
+import '../styles/BarSelector.css';
 
 export default function BarSelector({
   bars,

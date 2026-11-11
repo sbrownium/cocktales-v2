@@ -1,9 +1,9 @@
-import React, { useState, useContext, useRef } from "react";
-import UserRating from "./UserRating";
-import "./../styles/RatingsList";
-import NewRating from "./NewRating";
-import { UserContext } from "./app/UserContext";
-import MoreOptionsMenu from "./MoreOptionsMenu";
+import React, { useState, useContext, useRef } from 'react';
+import UserRating from './UserRating';
+import '../styles/RatingsList.css';
+import NewRating from './NewRating';
+import { UserContext } from '../context/UserContext';
+import MoreOptionsMenu from './MoreOptionsMenu';
 
 export default function RatingsList ({
     barID,

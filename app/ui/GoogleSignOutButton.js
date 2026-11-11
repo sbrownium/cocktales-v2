@@ -1,6 +1,5 @@
-import React from "react";
-import './../styles/GoogleSignInButton';
-
+import React from 'react';
+import '../styles/GoogleSignInButton.css';
 
 export default function GoogleSignOutButton ({
     handleClick

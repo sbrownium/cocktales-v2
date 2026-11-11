@@ -1,11 +1,11 @@
-import React, { useContext , useState} from 'react';
+import React, { useContext } from 'react';
 import { googleLogout } from '@react-oauth/google';
-import { getAuth, signInWithPopup, signInWithRedirect, getRedirectResult, GoogleAuthProvider } from "firebase/auth";
-import { ref, child, push, update } from "firebase/database";
-import { db, app } from "./firebase.js";
-import { UserContext } from './app/UserContext.js';
-import GoogleSignInButton from './GoogleSignInButton.js';
-import GoogleSignOutButton from './GoogleSignOutButton.js';
+// import { getAuth, signInWithRedirect, GoogleAuthProvider } from 'firebase/auth';
+// import { ref, child, push, update } from 'firebase/database';
+// import { db, app } from '../firebase';
+import { UserContext } from '../context/UserContext';
+import GoogleSignInButton from './GoogleSignInButton';
+import GoogleSignOutButton from './GoogleSignOutButton';
 
 export default function SignIn({
   users,

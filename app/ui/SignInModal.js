@@ -1,9 +1,9 @@
-import React, { useContext, useEffect } from "react";
-import { UserContext } from "./app/UserContext";
-import Button from "./Button";
-import XIcon from "./XIcon";
-import SignIn from "./SignIn";
-import "./SignInModal.css";
+import React, { useContext, useEffect } from 'react';
+import { UserContext } from '../context/UserContext';
+import Button from './Button';
+import XIcon from './XIcon';
+import SignIn from './SignIn';
+import '../styles/SignInModal.css';
 
 export default function SignInModal ({
     message,

@@ -1,6 +1,6 @@
-import { ref, update } from "firebase/database";
-import { db } from "./firebase.js";
-import Button from "./Button";
+// import { ref, update } from 'firebase/database';
+// import { db } from '../firebase';
+import Button from './Button';
 
 export default function Delete ({
     path,

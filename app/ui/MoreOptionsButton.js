@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import Delete from "./Delete";
-import Button from "./Button";
-import Modal from "./Modal";
+import React, { useState } from 'react';
+import Button from './Button';
+import Modal from './Modal';
 
-export default function MoreEditButton ({
+export default function MoreOptionsButton ({
     path,
     nodeID,
     reference,

@@ -1,5 +1,5 @@
-import {useState, useEffect} from "react";
-import "./EmojiLogo.css"
+import {useState, useEffect} from 'react';
+import '../styles/EmojiLogo.css';
 
 export default function EmojiLogo ({
     logo,

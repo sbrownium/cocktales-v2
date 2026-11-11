@@ -1,5 +1,5 @@
 import React from 'react';
-import './../styles/NewDrink'
+import '../styles/NewDrink.css';
 
 export default function NewDrink({
   newDrink,

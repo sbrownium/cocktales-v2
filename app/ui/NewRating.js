@@ -1,11 +1,11 @@
-import React, { useState, useContext, useRef, useEffect } from 'react';
-import { ref, child, push, update } from "firebase/database";
-import { db } from "./firebase.js";
-import { UserContext } from './app/UserContext.js';
-import Submit from './Submit.js';
-import SignInModal from './SignInModal.js';
-import Button from './Button.js';
-import './../styles/NewRating';
+import React, { useState, useContext, useRef } from 'react';
+// import { ref, child, push, update } from 'firebase/database';
+// import { db } from '../firebase';
+import { UserContext } from '../context/UserContext';
+import Submit from './Submit';
+import SignInModal from './SignInModal';
+import Button from './Button';
+import '../styles/NewRating.css';
 
 
 export default function NewRating({

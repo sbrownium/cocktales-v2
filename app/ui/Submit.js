@@ -1,5 +1,5 @@
 import React from 'react';
-import './../styles/Submit'
+import '../styles/Submit.css';
 
 export default function Submit({
     handleClick,

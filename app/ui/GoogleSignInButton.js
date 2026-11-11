@@ -1,5 +1,4 @@
-import './../styles/GoogleSignInButton';
-
+import '../styles/GoogleSignInButton.css';
 
 export default function GoogleSignInButton ({
     handleClick

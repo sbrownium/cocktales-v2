@@ -1,9 +1,9 @@
-import { useState } from "react";
-import GitHub from "./GitHub";
-import LinkedIn from "./LinkedIn";
-import Button from "./Button";
-import './MoreContainer.css';
-import XIcon from "./XIcon";
+import { useState } from 'react';
+import GitHub from './GitHub';
+import LinkedIn from './LinkedIn';
+import Button from './Button';
+import '../styles/MoreContainer.css';
+import XIcon from './XIcon';
 
 export default function MoreContainer () {
     const [moreSelected, setMoreSelected] = useState(false);

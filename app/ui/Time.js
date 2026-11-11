@@ -1,5 +1,5 @@
-import React from "react";
-import './../styles/Time'
+import React from 'react';
+import '../styles/Time.css';
 
 export default function Time ({initialTimeStamp}) {
     const duration = Date.now() - initialTimeStamp;

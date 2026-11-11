@@ -1,8 +1,8 @@
-import Button from "./Button";
-import XIcon from "./XIcon";
-import Delete from "./Delete";
-import Archive from "./Archive";
-import "./../styles/Modal";
+import Button from './Button';
+import XIcon from './XIcon';
+import Delete from './Delete';
+import Archive from './Archive';
+import '../styles/Modal.css';
 
 export default function Modal ({
     reference,

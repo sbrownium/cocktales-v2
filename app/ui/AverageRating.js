@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/AverageRating.css';
+import '/styles/AverageRating.css';
 
 export default function AverageRating({
     emojiLookUp,

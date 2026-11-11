@@ -1,9 +1,9 @@
-import React, { useState, useContext, useEffect } from "react";
-import { BarContext } from "./app/BarContext";
-import Comment from "./Comment";
-import NewComment from "./NewComment";
-import Button from "./Button";
-import "../styles/CommentList";
+import React, { useState, useContext, useEffect } from 'react';
+import { BarContext } from '../context/BarContext';
+import Comment from './Comment';
+import NewComment from './NewComment';
+import Button from './Button';
+import '../styles/CommentList.css';
 
 export default function CommentList ({
         comments,

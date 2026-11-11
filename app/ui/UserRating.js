@@ -1,9 +1,7 @@
-import React, { useContext, useState } from "react";
-import { UserContext } from './app/UserContext.js';
-import './UserRating.css'
-// import Button from "./Button.js";
-import NewRating from "./NewRating.js";
-import MoreOptionsMenu from "./MoreOptionsMenu.js";
+import React, { useContext, useState } from 'react';
+import { UserContext } from '../context/UserContext';
+import '../styles/UserRating.css';
+
 
 export default function UserRating ({
     barID,

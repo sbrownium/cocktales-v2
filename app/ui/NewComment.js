@@ -1,13 +1,13 @@
 import React, { useState, useContext, useRef, useEffect } from 'react';
-import { ref, child, push, update } from "firebase/database";
-import { db } from "./firebase.js";
-import { UserContext } from './app/UserContext.js';
-import { BarContext } from './app/BarContext.js';
-import Submit from './Submit.js';
-import Button from './Button.js';
-import SignInModal from './SignInModal.js';
-import XIcon from './XIcon.js';
-import '../styles/NewComment';
+// import { ref, child, push, update } from 'firebase/database';
+// import { db } from '../firebase';
+import { UserContext } from '../context/UserContext';
+import { BarContext } from '../context/BarContext';
+import Submit from './Submit';
+import Button from './Button';
+import SignInModal from './SignInModal';
+import XIcon from './XIcon';
+import '../styles/NewComment.css';
 
 export default function NewComment({
   drinkID,

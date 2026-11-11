@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from "react";
-import '../../styles/TimeOfDay.css';
+import React, {useState, useEffect} from 'react';
+import '../styles/TimeOfDay.css';
 
 export default function TimeOfDay () {
     const [dayPart, setDayPart] = useState('');

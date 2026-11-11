@@ -1,10 +1,10 @@
-import React, { useState, useContext, useEffect } from "react";
-import Button from "./Button";
-import XIcon from "./ui/XIcon";
-import MoreOptionsButton from "./MoreOptionsButton";
-import { UserContext } from "./app/UserContext";
-import { BarContext } from "./app/BarContext";
-import "../../styles/MoreOptionsMenu.css";
+import React, { useState, useContext, useEffect } from 'react';
+import Button from './Button';
+import XIcon from './XIcon';
+import MoreOptionsButton from './MoreOptionsButton';
+import { UserContext } from '../context/UserContext';
+import { BarContext } from '../context/BarContext';
+import '../styles/MoreOptionsMenu.css';
 
 
 export default function MoreOptionsMenu ({

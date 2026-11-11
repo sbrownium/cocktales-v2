@@ -1,4 +1,4 @@
-import './../styles/NewBar';
+import '../styles/NewBar.css';
 
 export default function NewBar ({ newDrink, validation, handleNewBar, focusNewBar }) {
     if (newDrink.isNewBar) {    

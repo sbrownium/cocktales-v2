@@ -1,13 +1,13 @@
 import React, {useContext, useState, useEffect, useRef} from 'react';
-import { ref, update } from "firebase/database";
-import { db } from "./firebase.js";
-import { UserContext } from './app/UserContext.js';
-import Button from './Button.js';
-import EditBox from './ui/EditBox.js';
-import '../../styles/Drink.css';
-import CommentList from './CommentList.js';
-import RatingsList from './RatingsList.js';
-import MoreOptionsMenu from './ui/MoreOptionsMenu.js';
+// import { ref, update } from 'firebase/database';
+// import { db } from '../firebase';
+import { UserContext } from '../context/UserContext';
+import Button from './Button';
+import EditBox from './EditBox';
+import '../styles/Drink.css';
+import CommentList from './CommentList';
+import RatingsList from './RatingsList';
+import MoreOptionsMenu from './MoreOptionsMenu';
 
 
 export default function Drink({

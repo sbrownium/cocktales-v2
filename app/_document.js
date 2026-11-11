@@ -8,7 +8,7 @@ export default function Document() {
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
                 <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/>
                 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet"/>
-                <link rel="icon" href="./favicon.svg" sizes="any" />
+                <link rel="icon" href="/favicon.svg" sizes="any" />
                 <title>Cocktales</title>
             </Head>
       <body className="antialiased">
